@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="CAFscript.js" defer></script>
+    </head>
+<body>
+        <header>
+            <h1>Cafeteria</h1> 
+        </header>
+        <div class="topnav">
+            <nav>
+                <img src="images/dining.jpg" alt="test" width=".1" height=".1" class = "img_dining">
+                <a href="Home.html"   >
+                    <!--<img src="dining.jpg" alt="test" width="" height="" class = "img_dining">-->Home
+                </a>
+                <a href="#Cafeteria.html" class="active">Cafeteria</a>
+                <a href="Bio.html">Biography</a>
+            </nav>
+        </div>
+<style>
+    table{
+        width: 70%;
+
+    }
+    table,th,td{
+        border: 2px, solid;
+        background-color: black;
+    }
+    th{
+        background-color: whitesmoke;
+        text-align: center;
+        width: 11%;
+    }
+    th:hover{
+        background-color: rgb(134, 192, 214);
+        
+    }
+    td{
+        background-color: rgb(188, 188, 188);
+        text-align: center;
+        width: max-content;
+    }
+    td:hover{
+        background-color: rgb(255, 142, 142);
+        
+    }
+    .autoslide{
+        float: right;
+        max-width: 700px;
+        position: relative;
+        margin: auto;
+        right: 40px;
+    }
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+</style>
+<!--
+    keep hover if u find a use for onclick with it
+-->
+    <section id = "menu">
+        <h1>Specials</h1>
+        <table>
+            <tr>
+                <th>Days</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wen</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat/Sun</th>
+            </tr>
+            <tr>
+                <th>Meals option 1</th>
+                <td width = '30px' height = '10%'>Hamburgers</td>
+                <td width = '100px'>Tacos</td>
+                <td width = '20%'>Potato and Beef</td>
+                <td width = '20%'>Pasta</td>
+                <td width = '20%'>Chicken and Rice</td>
+                <td width = '100px'>Macaroni and Fried chicken</td>
+            </tr>
+            <th>Calories</th>
+                <td>520</td>
+                <td>221</td>
+                <td>514</td>
+                <td>776</td>
+                <td>448</td>
+                <td>391</td>
+            <tr>
+                <th>Meals option 2</th>
+                <td width = '30px' height = '10%'>Chicken burgers</td>
+                <td width = '100px'>Quesadilla</td>
+                <td width = '20%'>Mashed potatoes and pork chops</td>
+                <td width = '20%'>Beef pasta</td>
+                <td width = '100px'>Beef and Rice</td>
+                <td width = '20%'>Gumbo</td>
+            </tr>
+            <tr>
+                <th>Calories</th>
+                <td>165</td>
+                <td>528</td>
+                <td>700</td>
+                <td>776</td>
+                <td>302</td>
+                <td>136</td>
+            </tr>
+            
+            <section class="autoslide">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images/meal1.jpg" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images/meal2.jpg" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/meal3.jpg" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/meal4.jpg" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/meal5.jpg" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/meal6.jpg" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+
+                  <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                  </div>
+            </section>
+        </table>
+    </section>
+        <h3>>Alternates</h3>
+        <section class="fooditems">
+            <div id="menu-items"></div>
+        </section>            
+    <p>Gluten Free Options Available</p>
+    <p>*Salad bar and Chicken Tenders/Fries are open all week.</p>
+    <button>
+        <h2>
+            <a href="order.html">Online Orders</a>
+        </h2>
+    </button>
+    <h5>Online orders still follow the weekly schedule</h5>
+<!--<form method="post">
+    <label>Meal:</label>
+    <input type="hidden" required>
+    <a href="#" onclick="alert('Thank you for placing your order please wait for the page to load!');">ORDER</a>
+</form>
+-->
+    <footer>
+        <p>&copy; 2024 Cougar Hall All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@mCougarhall.com">info@Cougarhall.com</a>.</p>
+     </footer>
+</body>
+</html>
