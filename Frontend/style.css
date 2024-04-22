@@ -1,0 +1,221 @@
+/* External CSS for My Favorite Vacations */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, rgb(198, 95, 95),white);
+    padding: .5%; /* or 10px*/
+}
+
+header {
+    background: #ff0000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width:200px; 
+    
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: left;
+}
+
+details {
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #ff0000;
+    color: #fff;
+}
+
+hr {
+    margin-top: 30px;
+}
+
+aside {
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Link Styles */
+a:hover {
+    color: #333;
+}
+
+.topnav{
+    background-color: #c5bdbd;
+    overflow: hidden;  
+    position: sticky;
+    top: 0px;  
+}
+
+.topnav a{
+    position: relative;
+    float: left;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding:12px 16px;
+    font-size: 19px;
+}
+.topnav a:hover{
+    background-color: beige;
+    color: rgb(0, 0, 0);
+}
+.topnav a.active{
+    background-color: rgba(128, 123, 123, 0.416);
+}
+.img_dining{
+    width: 4%;
+    height: 4%;
+    float: left;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: sticky;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next{
+    object-position: 6000px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-weight: bolder;
+  background-color: #bbbbbb89;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* idea not working return to later*/
+.menu-items{
+  width: 50%;
+  opacity: 1;
+  transition: 0.3s;
+}
+.menu-items:hover{
+  opacity: 1;
+}
